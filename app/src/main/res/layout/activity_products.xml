@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Products">
+
+    <ImageView
+        android:id="@+id/ivArrow"
+        android:layout_width="71dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="79dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvProducts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/tvProducts"
+        android:layout_width="160dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="85dp"
+        android:text="Products"
+        android:textColor="#050505"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivArrow"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivBraids"
+        android:layout_width="179dp"
+        android:layout_height="99dp"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="21dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivMakeUp"
+        app:layout_constraintTop_toBottomOf="@+id/tvProducts"
+        app:srcCompat="@drawable/img_5" />
+
+    <ImageView
+        android:id="@+id/ivMakeUp"
+        android:layout_width="149dp"
+        android:layout_height="148dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivBraids"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivArrow"
+        app:srcCompat="@drawable/img_4" />
+
+    <TextView
+        android:id="@+id/tvmake"
+        android:layout_width="97dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="100dp"
+        android:text="Make Up"
+        android:textColor="#090808"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnBraids"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivMakeUp" />
+
+    <TextView
+        android:id="@+id/tvbraids"
+        android:layout_width="72dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="80dp"
+        android:text="Braids"
+        android:textColor="#050505"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivMakeUp"
+        app:layout_constraintTop_toBottomOf="@+id/ivBraids" />
+
+    <Button
+        android:id="@+id/btnBraids"
+        android:layout_width="108dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="63dp"
+        android:text="Braids"
+        android:textColor="#F7F8F3F3"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvmake"
+        app:layout_constraintTop_toBottomOf="@+id/tvbraids" />
+
+    <ImageView
+        android:id="@+id/ivSpray1"
+        android:layout_width="159dp"
+        android:layout_height="134dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="33dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivHairspray1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvmake"
+        app:srcCompat="@drawable/img_6" />
+
+    <TextView
+        android:id="@+id/tvSpray"
+        android:layout_width="101dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:text="Spray"
+        android:textColor="#090909"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvHairspray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivSpray1" />
+
+    <ImageView
+        android:id="@+id/ivHairspray1"
+        android:layout_width="178dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivSpray1"
+        app:layout_constraintTop_toBottomOf="@+id/btnBraids"
+        app:srcCompat="@drawable/img_8" />
+
+    <TextView
+        android:id="@+id/tvHairspray"
+        android:layout_width="120dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="41dp"
+        android:text="Hair Spray"
+        android:textColor="#040303"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvSpray"
+        app:layout_constraintTop_toBottomOf="@+id/ivHairspray1" />
+
+    <ImageView
+        android:id="@+id/ivHairfood1"
+        android:layout_width="133dp"
+        android:layout_height="127dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="70dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivHairfood2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSpray"
+        app:srcCompat="@drawable/img_9" />
+
+    <TextView
+        android:id="@+id/tvHairfood"
+        android:layout_width="105dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="107dp"
+        android:text="Hair Food"
+        android:textColor="#050101"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvhraifood"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivHairfood1" />
+
+    <ImageView
+        android:id="@+id/ivHairfood2"
+        android:layout_width="147dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivHairfood1"
+        app:layout_constraintTop_toBottomOf="@+id/tvHairspray"
+        app:srcCompat="@drawable/img_10" />
+
+    <TextView
+        android:id="@+id/tvhraifood"
+        android:layout_width="97dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="63dp"
+        android:text="Hair Food"
+        android:textColor="#040303"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvHairfood"
+        app:layout_constraintTop_toBottomOf="@+id/ivHairfood2" />
+
+    <ImageView
+        android:id="@+id/ivScrolup"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvhraifood"
+        app:layout_constraintStart_toEndOf="@+id/tvHairfood"
+        app:layout_constraintTop_toBottomOf="@+id/ivHairfood2"
+        app:srcCompat="@drawable/baseline_keyboard_arrow_down_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
