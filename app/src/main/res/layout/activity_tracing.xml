@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Tracing">
+
+    <ImageView
+        android:id="@+id/ivArrow"
+        android:layout_width="87dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvTrace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+    <TextView
+        android:id="@+id/tvTrace"
+        android:layout_width="309dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="5dp"
+        android:text="Tracing  your order"
+        android:textColor="#9C27B0"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivArrow"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivMap"
+        android:layout_width="302dp"
+        android:layout_height="223dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="53dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTrace"
+        app:srcCompat="@drawable/img_29" />
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="330dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="46dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        android:text="Your order will be delivered in 3 minutes."
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivMap" />
+
+    <TextView
+        android:id="@+id/tvRate"
+        android:layout_width="202dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="112dp"
+        android:text="Rate our services"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMessage" />
+
+    <Button
+        android:id="@+id/btnReviews"
+        android:layout_width="233dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="81dp"
+        android:drawableStart="@drawable/baseline_stars_24"
+        android:text="Reviews"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivStar" />
+
+    <ImageView
+        android:id="@+id/ivStar"
+        android:layout_width="44dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivStar1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ivStar1"
+        app:srcCompat="@drawable/baseline_stars_24" />
+
+    <ImageView
+        android:id="@+id/ivStar1"
+        android:layout_width="48dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="13dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivStar2"
+        app:layout_constraintStart_toEndOf="@+id/ivStar"
+        app:layout_constraintTop_toTopOf="@+id/ivStar2"
+        app:srcCompat="@drawable/baseline_stars_24" />
+
+    <ImageView
+        android:id="@+id/ivStar2"
+        android:layout_width="49dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/ivStar3"
+        app:layout_constraintStart_toEndOf="@+id/ivStar1"
+        app:layout_constraintTop_toTopOf="@+id/ivStar3"
+        app:srcCompat="@drawable/baseline_stars_24" />
+
+    <ImageView
+        android:id="@+id/ivStar3"
+        android:layout_width="54dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="78dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivStar2"
+        app:layout_constraintTop_toBottomOf="@+id/tvRate"
+        app:srcCompat="@drawable/baseline_stars_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>

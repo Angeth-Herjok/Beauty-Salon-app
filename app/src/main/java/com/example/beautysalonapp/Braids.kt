@@ -20,7 +20,7 @@ class Braids : AppCompatActivity() {
             startActivity(intent)
         }
         binding.btnProceed.setOnClickListener {
-            val intent= Intent(this, Products::class.java)
+            val intent= Intent(this, Perfumes::class.java)
             startActivity(intent)
         }
     }

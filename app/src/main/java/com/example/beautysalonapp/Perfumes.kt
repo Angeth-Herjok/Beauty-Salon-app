@@ -16,11 +16,11 @@ class Perfumes : AppCompatActivity() {
         super.onResume()
         setContentView(binding.root)
         binding.ivArrow.setOnClickListener {
-            val intent= Intent(this,Products::class.java)
+            val intent= Intent(this,Braids::class.java)
             startActivity(intent)
         }
         binding.btnSelect.setOnClickListener {
-            val intent= Intent(this, Products::class.java)
+            val intent= Intent(this, Cart::class.java)
             startActivity(intent)
         }
     }

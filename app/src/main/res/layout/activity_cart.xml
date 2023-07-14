@@ -10,23 +10,254 @@
         android:id="@+id/ivArrow"
         android:layout_width="71dp"
         android:layout_height="55dp"
-        app:srcCompat="@drawable/baseline_arrow_back_24"
-        tools:layout_editor_absoluteX="6dp"
-        tools:layout_editor_absoluteY="11dp" />
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="91dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvCart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_arrow_back_24" />
 
     <ImageView
         android:id="@+id/ivAlaska"
         android:layout_width="150dp"
-        android:layout_height="164dp"
-        app:srcCompat="@drawable/img_22"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="74dp" />
+        android:layout_height="190dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="17dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivArrow"
+        app:srcCompat="@drawable/img_22" />
 
     <TextView
         android:id="@+id/tvText"
         android:layout_width="161dp"
         android:layout_height="33dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="67dp"
         android:text="Alaska"
-        tools:layout_editor_absoluteX="197dp"
-        tools:layout_editor_absoluteY="74dp" />
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivAlaska"
+        app:layout_constraintTop_toBottomOf="@+id/tvCart" />
+
+    <TextView
+        android:id="@+id/tvCart"
+        android:layout_width="104dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="139dp"
+        android:text="Cart"
+        android:textColor="#9C27B0"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivArrow"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/chCheck1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="27dp"
+        android:text="+"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvOne"
+        app:layout_constraintStart_toEndOf="@+id/ivAlaska"
+        app:layout_constraintTop_toBottomOf="@+id/tvText" />
+
+    <TextView
+        android:id="@+id/tvOne"
+        android:layout_width="41dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="78dp"
+        android:text="1"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chCheck1"
+        app:layout_constraintTop_toBottomOf="@+id/tvText" />
+
+    <CheckBox
+        android:id="@+id/cbCheck"
+        android:layout_width="59dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="136dp"
+        android:text="-"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivAlaska"
+        app:layout_constraintTop_toBottomOf="@+id/chCheck1" />
+
+    <ImageView
+        android:id="@+id/ivDelete"
+        android:layout_width="54dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="102dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvShilling"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivAlaska"
+        app:srcCompat="@drawable/baseline_delete_24" />
+
+    <TextView
+        android:id="@+id/tvShilling"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="81dp"
+        android:text="Ksh. 500"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivDelete"
+        app:layout_constraintTop_toBottomOf="@+id/cbCheck" />
+
+    <TextView
+        android:id="@+id/tvOrder"
+        android:layout_width="189dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="142dp"
+        android:text="Your Order"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvShilling" />
+
+    <TextView
+        android:id="@+id/tvSub"
+        android:layout_width="137dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="69dp"
+        android:text="Subtotal"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvAmount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOrder" />
+
+    <TextView
+        android:id="@+id/tvVAT"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="85dp"
+        android:text="VAT"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvAmount1"
+        app:layout_constraintStart_toStartOf="@+id/tvSub"
+        app:layout_constraintTop_toBottomOf="@+id/tvSub" />
+
+    <TextView
+        android:id="@+id/tvShipping"
+        android:layout_width="137dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="78dp"
+        android:text="Shipping fees"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvAmount2"
+        app:layout_constraintStart_toStartOf="@+id/tvVAT"
+        app:layout_constraintTop_toBottomOf="@+id/tvVAT" />
+
+    <Button
+        android:id="@+id/btnCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="112dp"
+        android:text="Place order"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTotal" />
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="83dp"
+        android:text="Ksh. 500"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvSub"
+        app:layout_constraintTop_toBottomOf="@+id/tvOrder" />
+
+    <TextView
+        android:id="@+id/tvAmount1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="92dp"
+        android:text="Ksh. 70"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvAmount"
+        app:layout_constraintTop_toBottomOf="@+id/tvAmount" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="134dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="77dp"
+        android:text="Total"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvAmount3"
+        app:layout_constraintStart_toStartOf="@+id/tvShipping"
+        app:layout_constraintTop_toBottomOf="@+id/tvShipping" />
+
+    <TextView
+        android:id="@+id/tvAmount2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="98dp"
+        android:text="Ksh.60"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvAmount1"
+        app:layout_constraintTop_toBottomOf="@+id/tvAmount1" />
+
+    <TextView
+        android:id="@+id/tvAmount3"
+        android:layout_width="86dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="87dp"
+        android:text="Ksh.850"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvAmount2"
+        app:layout_constraintTop_toBottomOf="@+id/tvAmount2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
